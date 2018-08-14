@@ -1,5 +1,4 @@
-if(window.location.pathname == "/" || window.location.pathname == "/Van-Gorsel-Middleman/"){
-  window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 
   // var banner = document.querySelector(".banner")
   var navbar = document.querySelector(".navbar-van-gorsel")
@@ -20,4 +19,3 @@ if(window.location.pathname == "/" || window.location.pathname == "/Van-Gorsel-M
       navbar.classList.add("navbar-invisible")
     }
   }
-}
