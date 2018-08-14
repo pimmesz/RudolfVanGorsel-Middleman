@@ -1,18 +1,9 @@
 .contact-form-container {
   display: flex;
   justify-content: space-evenly;
-}
+  flex-direction: column;
 
-@media screen and (max-width: 600px) {
-  .contact-form-container.__mobile {
-    flex-direction: column-reverse;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .contact-form-container.__desktop {
-    flex-direction: row;
-  }
+  background-color: $yankees-blue;
 }
 
 .contact-form-div {
@@ -21,9 +12,7 @@
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
   color: $rich-black;
 }

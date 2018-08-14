@@ -22,10 +22,6 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
-data.projects.each do |name, project|
-  proxy "/projects/#{name}.html", "/projects/show.html", locals: { description: project.description, name: project.name, images: project.images }, ignore: true
-end
-
 activate :imageoptim do |options|
   # Use a build manifest to prevent re-compressing images between builds
   options.manifest = true
