@@ -22,6 +22,20 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .contact-form-div.__mobile{
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form-div.__desktop{
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
 .contact-form__box{
   display: flex;
   flex-direction: column;
