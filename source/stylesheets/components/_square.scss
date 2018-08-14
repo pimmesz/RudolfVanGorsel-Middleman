@@ -1,0 +1,84 @@
+.square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .square-container.__mobile{
+    flex-direction: column;
+  }
+
+  .square-text.__mobile {
+    margin: 20px 0px 0px 40px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .square-container.__desktop{
+    flex-direction: row;
+  }
+
+  .square-text.__desktop {
+    margin-left: 40px;
+  }
+}
+
+.mainDiv{
+  position: relative;
+  width: 206px;
+  height: 190px;
+  margin:0px 0px 50px 0px;
+  transform: rotate(180deg);
+}
+
+.square-text {
+  width: 300px;
+  p {
+    opacity: 0.6;
+  }
+}
+
+.square1 {
+  width:100px;
+  height:100px;
+  background:rgba(24,62,255,1);
+  border:solid 2px #FFF;
+  float:left;
+  transform: skew(180deg,210deg);
+  position: absolute;
+  top: 43px;
+}
+
+.square0 {
+  width:100px;
+  height:100px;
+  background:rgba(0,222,220,1);
+  border:solid 2px #FFF;
+  float:left;
+  transform: skew(180deg,150deg);
+  position: absolute;
+  left:102px;
+  top: 43px;
+}
+
+.square2 {
+  width:114px;
+  height:100px;
+  background:rgba(165,221,2,1);
+  border:solid 2px #FFF;
+  float:left;
+  transform: rotate(150deg) translate(-40px, -16px) skew(30deg, 0deg);
+  position: absolute;
+  left: 0px;
+  top: -32px;
+}
+
+.square1, .square0, .square2, .square-text {
+ -moz-transition: all 1s;
+ -webkit-transition: all 1s;
+ transition: all 1s;
+ &:hover{
+  opacity: 0.7;
+ }
+}
