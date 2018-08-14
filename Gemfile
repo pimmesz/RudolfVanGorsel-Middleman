@@ -13,3 +13,4 @@ gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
 gem "middleman-imageoptim", :git => "https://github.com/plasticine/middleman-imageoptim", :branch => "master"
+
