@@ -37,15 +37,25 @@
   }
 }
 
-.btn-primary {
-  background-color: $bright-orange;
+.btn-banner {
+  background-color: $burgundy;
+  color: white;
   border: none;
-}
-
-.btn-primary:hover {
-  background-color: $bright-orange;
-  opacity: 0.8;
-  border: none;
+  height: 60px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: $burgundy;
+    color: white;
+    opacity: 0.8;
+    border: none;
+  }
+  &:active, &:focus {
+    background-color: $burgundy;
+    color: white;
+  }
 }
 
 .divide-banner {
@@ -92,4 +102,7 @@ a.divide-banner-skills:hover {
 .banner-content {
   margin: 0px 50px 0px 50px;
   width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

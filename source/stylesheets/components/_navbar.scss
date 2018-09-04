@@ -15,24 +15,32 @@
 
 .navbar-invisible {
   /* Navbar link */
+  h5 {
+    color: $white;
+  }
+
   .navbar-van-gorsel-link {
-    color: $rich-black;
-    font-size: 14px;
-  }
-  .navbar-van-gorsel-link:hover {
-    color: rgba(244, 96, 54, 1);
-    text-decoration: none;
-  }
+   color: $white;
+   font-size: 16px;
+ }
+ .navbar-van-gorsel-link:hover {
+  color: rgba(244, 96, 54, 1);
+  text-decoration: none;
+}
 }
 
 .navbar-visible {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: $white;
+
+  h5 {
+    color: $oxford-blue;
+  }
 
   /* Navbar link */
   .navbar-van-gorsel-link {
-    color: #616668;
-    font-size: 14px;
+    color: $oxford-blue;
+    font-size: 16px;
   }
 
   .navbar-van-gorsel-link:hover {
@@ -104,7 +112,7 @@
   position: absolute;
   right: 10px;
   top: -6px;
-  background-color: white;
+  background-color: $white;
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;

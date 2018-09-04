@@ -1,12 +1,17 @@
-.over-ons-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  padding: 0px 70px 0px 70px;
+.over-ons {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 0px 70px 0px 70px;
+  }
+  &__text {
+    width: 60%;
+  }
 }
 
 .portrait-img {
@@ -22,7 +27,7 @@
 .stappenplan-container {
   margin: 100px 0px 0px 0px;
 
-  background-color: $spanish-blue;
+  background-color: $burgundy;
   -webkit-clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
   clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
 
@@ -35,44 +40,27 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .stappenplan-container.__mobile{
-    padding: 70px 0px 70px 0px;
-  }
-  .stappenplan-text.__mobile {
-    padding: 0px 30px 50px 30px;
-    width: 90vw;
-  }
-  .stappenplan-punten.__mobile{
-    flex-direction: column;
-    align-items: center;
-  }
-  .stappenplan-punt.__mobile{
-    width: 90vw;
-  }
+.stappenplan-container.__mobile{
+  padding: 70px 0px 70px 0px;
 }
 
-@media screen and (min-width: 600px) {
-  .stappenplan-container.__desktop{
-    padding: 70px 30px 70px 30px;
-  }
-  .stappenplan-text.__desktop {
-    padding: 0px 30px 50px 30px;
-    width: 70vw;
-  }
-  .stappenplan-punten.__desktop{
-    flex-direction: row;
-  }
-  .stappenplan-punt.__desktop{
-    width: 25vw;
-  }
+.stappenplan-text.__mobile {
+  text-align: center;
+  padding: 0px 30px 50px 30px;
+  width: 90vw;
 }
 
 .stappenplan-punten {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10px 0px 10px 0px;
+  width: 33%;
+  img {
+    height: 50px;
+  }
 }
 
 .stappenplan-punt {
@@ -80,7 +68,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
 }
 
@@ -106,5 +93,15 @@
   align-items: center;
   h1 {
     color: white;
+  }
+}
+
+.stappenplan-flex {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
   }
 }
