@@ -24,8 +24,12 @@
    font-size: 16px;
  }
  .navbar-van-gorsel-link:hover {
-  color: rgba(244, 96, 54, 1);
+  color: $white;
   text-decoration: none;
+  opacity: 0.8;
+}
+.dropdown {
+  color: $white;
 }
 }
 
@@ -34,18 +38,21 @@
   background: $white;
 
   h5 {
-    color: $oxford-blue;
+    color: $rich-black;
   }
 
   /* Navbar link */
   .navbar-van-gorsel-link {
-    color: $oxford-blue;
+    color: $rich-black;
     font-size: 16px;
   }
 
   .navbar-van-gorsel-link:hover {
     color: rgba(244, 96, 54, 1);
     text-decoration: none;
+  }
+  .dropdown {
+    color: $rich-black;
   }
 }
 
@@ -63,6 +70,9 @@
   h5 {
     line-height: 0px;
     font-size: 25px;
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
   p {
     font-size: 10px;
@@ -87,7 +97,6 @@
   padding: 0 20px;
 }
 
-/* Dropdown menu */
 .navbar-van-gorsel-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;

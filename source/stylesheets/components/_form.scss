@@ -1,0 +1,131 @@
+.contactgegevens-div.__mobile.__desktop {
+  display: flex;
+  justify-content: space-evenly;
+  background: #016FB9;
+  -webkit-clip-path: polygon(0 0,100% 10%,100% 100%,0 90%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  h3 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+.contact-form__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+      width: 80vw;
+  }
+  .contact-form-container.__mobile {
+    flex-direction: column-reverse;
+  }
+  .contactgegevens-div.__mobile{
+    flex-direction: column;
+    padding: 50px 0px 70px 0px;
+  }
+  .contact-form__box{
+    margin: 0px 0px 10px 0px;
+  }
+  .maps-container {
+    flex-direction: column;
+  }
+  .maps{
+    width: 97vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form {
+      width: 40vw;
+  }
+  .contact-form-container.__desktop {
+    flex-direction: row;
+  }
+  .contactgegevens-div.__mobile{
+    flex-direction: row;
+  }
+  .contact-form__box{
+    margin: 50px 0px 50px 0px;
+  }
+  .maps-container {
+    flex-direction: row;
+  }
+  .maps{
+    width: 50vw;
+  }
+}
+
+.contact-form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  color: $rich-black;
+}
+
+form.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+form.contact-form input {
+  margin: 10px 0px 10px 0px;
+}
+
+form input[type="checkbox"] {
+  margin-right: 20px;
+}
+
+button.contact-form-button {
+  background-color: $rudolf-orange;
+  color: white;
+  height: 40px;
+}
+
+button.contact-form-button:hover {
+  opacity: 0.8;
+}
+
+textarea#exampleTextarea {
+  margin-bottom: 10px;
+}
+
+.maps-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.maps{
+  height: 70vh;
+  margin: 10px;
+  text-align: center;
+}
+
+input.form-control, textarea#exampleTextarea {
+    color: $oxford-blue;
+    &::placeholder {
+      color: $oxford-blue;
+      opacity: 0.6;
+    }
+}
+
+
+

@@ -28,7 +28,7 @@ title: Rudolf van Gorsel - Home
   </div>
   <div class="stappenplan-flex">
     <div class="stappenplan-punten __mobile __desktop">
-      <%= image_tag "search.png" %>
+      <%= image_tag "objective.png" %>
       <h3>Exploitatie</h3>
       <div class="stappenplan-punt __mobile __desktop">
         <br>
@@ -48,7 +48,7 @@ title: Rudolf van Gorsel - Home
       </div>
     </div>
     <div class="stappenplan-punten __mobile __desktop">
-      <%= image_tag "search.png" %>
+      <%= image_tag "chess-piece.png" %>
       <h3>Beheer</h3>
       <div class="stappenplan-punt __mobile __desktop">
         <br>
@@ -69,7 +69,7 @@ wooneenheden)
       </div>
     </div>
     <div class="stappenplan-punten __mobile __desktop">
-      <%= image_tag "search.png" %>
+      <%= image_tag "puzzle-pieces.png" %>
       <h3>Initiatief</h3>
       <div class="stappenplan-punt __mobile __desktop">
         <br>
@@ -97,6 +97,23 @@ wooneenheden)
 
 <a id="contact"></a>
 <div class="contact-form-container">
+  <div class="contact-form-div">
+    <h3>Stel een vraag</h3>
+    <form method="POST" action="https://formspree.io/hello@pim.gg" class="contact-form">
+      <input type="hidden" name="_language" value="nl" />
+      <input type="hidden" name="_subject" value="Van Gorsel  - Offerte aanvraag" />
+      <input type="hidden" name="_next" value="https://pimmesz.github.io/RudolfVanGorsel-Middleman/" />
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <input class="form-control" type="email" name="_replyto" placeholder="Email" />
+      <input class="form-control" type="text" name="name" placeholder="Naam">
+      <input class="form-control" type="tel" name="tel" placeholder="Telefoonnummer">
+
+      <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message"></textarea>
+
+      <button type="submit" class="contact-form-button">Verzend vraag</button>
+    </form>
+  </div>
   <div class="contact-form-div __mobile __desktop">
     <div class=contact-form__box>
       <h3>Adres</h3>
@@ -109,6 +126,7 @@ wooneenheden)
       <h3>Contact</h3>
       <p>076-5322262</p>
       <p>Info@rudolfvangorsel.nl</p>
+      <a href="https://www.linkedin.com/in/dignie-van-gorsel-74430828/" class="linkedin"><i class="fa fa-linkedin"></i> - LinkedIn</a>
     </div>
 
     <div class=contact-form__box>

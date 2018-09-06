@@ -1,3 +1,5 @@
+
+
 .over-ons {
   &__container {
     display: flex;
@@ -8,9 +10,15 @@
     margin-bottom: 100px;
     margin-top: 100px;
     padding: 0px 70px 0px 70px;
+    @media screen and (max-width: 600px) {
+      padding: 0px 10px 0px 10px;
+    }
   }
   &__text {
-    width: 60%;
+    width: 40%;
+    @media screen and (max-width: 600px) {
+      width: 80%;
+    }
   }
 }
 
@@ -27,7 +35,7 @@
 .stappenplan-container {
   margin: 100px 0px 0px 0px;
 
-  background-color: $burgundy;
+  background-color: $oxford-blue;
   -webkit-clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
   clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
 
@@ -41,7 +49,7 @@
 }
 
 .stappenplan-container.__mobile{
-  padding: 70px 0px 70px 0px;
+  padding: 100px 0px 100px 0px;
 }
 
 .stappenplan-text.__mobile {
@@ -98,10 +106,24 @@
 
 .stappenplan-flex {
   margin-top: 100px;
-  width: 100%;
+  width: 70%;
   display: flex;
+  @media screen and (max-width: 1100px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
   @media screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.linkedin {
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.8;
   }
 }
