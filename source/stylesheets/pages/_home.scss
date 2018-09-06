@@ -69,6 +69,10 @@
   img {
     height: 50px;
   }
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    margin-bottom: 100px;
+  }
 }
 
 .stappenplan-punt {
@@ -77,6 +81,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @media screen and (max-width: 600px) {
+    padding: 0px;
+  }
 }
 
 .stappenplan-punt img {
