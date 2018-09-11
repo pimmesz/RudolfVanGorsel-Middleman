@@ -15,7 +15,7 @@
 
 .navbar-invisible {
   /* Navbar link */
-  h5 {
+  h5, p {
     color: $white;
   }
 
@@ -37,7 +37,7 @@
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: $white;
 
-  h5 {
+  h5, p {
     color: $rich-black;
   }
 
@@ -66,6 +66,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0px 0px 0px 10px;
+  padding-top: 6px;
 
   h5 {
     line-height: 0px;
@@ -75,7 +76,7 @@
     }
   }
   p {
-    font-size: 10px;
+    font-size: 12px;
     opacity: 0.6;
   }
 }
